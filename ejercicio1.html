@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobotWeb</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4697e7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+        header {
+            width: 100%;
+            background-color: rgb(245, 109, 109);
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .search-icon img {
+            width: 24px;
+            height: 24px;
+        }
+
+        
+        .container {
+            display: flex;
+            width: 100%;
+            flex: 1;
+        }
+
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ec6868;
+            width: 80px;
+            padding-top: 10px;
+            border-right: 1px solid #ddd;
+        }
+
+        .sidebar img {
+            width: 50px;
+            height: 50px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: center;
+            height: 400px;
+        }
+
+        .welcome-box {
+            background-color: rgb(240, 132, 132);
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+            border-top: 1px solid #aaa;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>RobotWeb</h1>
+        <div class="search-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Buscar">
+        </div>
+    </header>
+
+    
+    <div class="container">
+        
+        <div class="sidebar">
+            <img src="1.webp" alt="Icono 1">
+            <img src="2.webp" alt="Icono 2">
+            <img src="3.webp" alt="Icono 3">
+            <img src="4.webp" alt="Icono 4">
+        </div>
+
+        
+        <div class="content">
+            <div class="welcome-box">
+                Welcome to RobotWeb
+            </div>
+        </div>
+    </div>
+</body>
+</html>

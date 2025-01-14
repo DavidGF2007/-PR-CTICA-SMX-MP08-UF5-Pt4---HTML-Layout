@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3bf4f;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+        }
+        h1 {
+            color: rgb(0, 0, 0);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            resize: both;
+            overflow: auto;
+            width: 930px;
+            height: auto;
+        }
+        .top {
+            background-color: #f76361;
+            height: 58px;
+            padding: 10px;
+            color: black;
+            text-align: left;
+        }
+        .middle {
+            display: flex;
+            flex: 1;
+        }
+        .left {
+            background-color: #a087fa;
+            width: 211px;
+            flex-grow: 0;
+            padding: 10px;
+            text-align: left;
+            color: black;
+        }
+        .center {
+            background-color: #8cfd82;
+            flex-grow: 1;
+            padding: 10px;
+            text-align: left;
+            color: black;
+        }
+        .right {
+            background-color: #d2ee6f;
+            width: 211px;
+            flex-grow: 0;
+            padding: 10px;
+            text-align: left;
+            color: black;
+        }
+        .bottom {
+            background-color: #f35d2f;
+            height: 58px;
+            padding: 10px;
+            color: black;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 6</h1>
+    <div class="container">
+        <div class="top">
+            Ocupo solo la altura que necesito
+            <br>[930 x 58]
+        </div>
+        <div class="middle">
+            <div class="left">
+                Ocupo el ancho que necesito
+                <br> y crezco de altura
+                <br>[211 x 294]
+            </div>
+            <div class="center">
+                Ocupo el ancho restante
+                <br> y crezco de altura
+                <br>[509 x 294]
+            </div>
+            <div class="right">
+                Ocupo el ancho que necesito
+                <br> y crezco de altura
+                <br>[211 x 294]
+            </div>
+        </div>
+        <div class="bottom">
+            Ocupo solo la altura que necesito
+            <br>[930 x 58]
+        </div>
+    </div>
+</body>
+</html>
+
